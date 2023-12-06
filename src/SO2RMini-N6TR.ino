@@ -802,6 +802,7 @@ void CWSendingEngine()
       // Nothing new to send has shown up - keep counting down the PTTTurnOffTimer
 
       if (PTTTurnOffTimer > 0) PTTTurnOffTimer--;
+      if (PTTForceOn) return;            // added 03-12-2023 so we don't turn PTT off just yet
       if (PTTTurnOffTimer > 0) return;   // not done yet
 
       // The PTTTurnOffTimer has expired with no new CW to send - shut things down

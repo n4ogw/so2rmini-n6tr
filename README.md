@@ -76,5 +76,4 @@ multiples of 10 (50 = 500 Hz for example)
 * <19>  Footswith to PTT enable (00= no PTT, 01 = control PTT)
 * <1A>  Delete last character in send buffer (returns 01 if successful)
 * <1B>  Return number of counts since last CW (250 ms / count)
-* <1C>  Send a ? on the inactive radio at the next word space
 * <1D>  Send data to I/O expander
